@@ -36,5 +36,7 @@ namespace BancoHorasWeb.Models
 
         public virtual ICollection<Gerente> Gerente { get; set; }
 
+        public virtual ICollection<Registro> Registro { get; set; }
+
     }
 }

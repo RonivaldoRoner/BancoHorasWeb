@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
 
@@ -19,14 +20,21 @@ namespace BancoHorasWeb.Models
         {
         }
 
-        public System.Data.Entity.DbSet<BancoHorasWeb.Models.Responsavel> Responsavels { get; set; }
+        public DbSet<Responsavel> Responsavels { get; set; }
 
-        public System.Data.Entity.DbSet<BancoHorasWeb.Models.Empresa> Empresas { get; set; }
+        public DbSet<Empresa> Empresas { get; set; }
 
-        public System.Data.Entity.DbSet<BancoHorasWeb.Models.Funcionario> Funcionarios { get; set; }
+        public DbSet<Funcionario> Funcionarios { get; set; }
 
-        public System.Data.Entity.DbSet<BancoHorasWeb.Models.Situacao> Situacaos { get; set; }
+        public DbSet<Situacao> Situacaos { get; set; }
 
-        public System.Data.Entity.DbSet<BancoHorasWeb.Models.Gerente> Gerentes { get; set; }
+        public DbSet<Gerente> Gerentes { get; set; }
+
+        public DbSet<Registro> Registroes { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<OneToManyCascadeDeleteConvention>();
+        }
     }
 }

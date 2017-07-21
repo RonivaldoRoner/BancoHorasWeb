@@ -15,5 +15,7 @@ namespace BancoHorasWeb.Models
         public int FuncionarioId { get; set; }
 
         public virtual Funcionario Funcionario { get; set; }
+
+        public virtual ICollection<Registro> Registro { get; set; }
     }
 }

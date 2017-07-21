@@ -46,7 +46,6 @@ namespace BancoHorasWeb.Models
         public virtual Responsavel Responsavel { get; set; }
 
         public virtual ICollection<Funcionario> Funcionario { get; set; }
-
         
     }
 }

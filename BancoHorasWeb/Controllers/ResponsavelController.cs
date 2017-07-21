@@ -16,8 +16,8 @@ namespace BancoHorasWeb.Controllers
 
         // GET: Responsavel
         public ActionResult Index()
-        {
-            return View(db.Responsavels.ToList());
+        {           
+             return View(db.Responsavels.ToList());            
         }
 
         // GET: Responsavel/Details/5
