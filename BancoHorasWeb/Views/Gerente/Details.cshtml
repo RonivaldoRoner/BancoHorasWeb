@@ -1,0 +1,26 @@
+﻿@model BancoHorasWeb.Models.Gerente
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Gerente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.CPF)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GerenteId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

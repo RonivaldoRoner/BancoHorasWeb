@@ -1,0 +1,66 @@
+﻿@model BancoHorasWeb.Models.Funcionario
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Funcionario</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Empresa.CNPJ)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empresa.CNPJ)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Situacao.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Situacao.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Admissao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Admissao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Demissao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Demissao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FuncionarioId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
