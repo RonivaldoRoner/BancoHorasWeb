@@ -1,0 +1,82 @@
+﻿@model BancoHorasWeb.Models.Registro
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcionario.CPF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcionario.CPF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gerente.GerenteId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gerente.GerenteId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataRegistro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataRegistro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InicioReg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InicioReg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FimReg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FimReg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SaldoDias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SaldoDias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SaldoHoras)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SaldoHoras)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RegistroId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
